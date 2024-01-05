@@ -29,3 +29,18 @@
 6. [*cron*](#cron)
     - [Setting Up a *cron* Job](#setting-up-a-cron-job)
 7. [Monitoring](#monitoring)
+8. [Bonus](#bonus)
+    - [Installation](#1-installation)
+    - [Linux Lighttpd MariaDB PHP *(LLMP)* Stack](#2-linux-lighttpd-mariadb-php-llmp-stack)
+       - [Step 1: Installing Lighttpd](#step-1-installing-lighttpd)
+       - [Step 2: Installing & Configuring MariaDB](#step-2-installing--configuring-mariadb)
+       - [Step 3: Installing PHP](#step-3-installing-php)
+       - [Step 4: Downloading & Configuring WordPress](#step-4-downloading--configuring-wordpress)
+       - [Step 5: Configuring Lighttpd](#step-5-configuring-lighttpd)
+    - [File Transfer Protocol *(FTP)*](#3-file-transfer-protocol-ftp)
+       - [Step 1: Installing & Configuring FTP](#step-1-installing--configuring-ftp)
+       - [Step 2: Connecting to Server via FTP](#step-2-connecting-to-server-via-ftp)
+
+8. [Submission and peer-evaluation for 1337/42 Students](#peereval)
+
+9. [evalknowledge.txt](#evalknowledge)
