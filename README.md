@@ -106,3 +106,43 @@ Once we know a little more about how to build a server inside a Virtual Machine 
 
 ## Installation
 At the time of writing, the latest stable version of [Debian](https://www.debian.org) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* [here](https://youtu.be/2w-2MX5QrQw).
+
+## Installation
+At the time of writing, the latest stable version of [Debian](https://www.debian.org) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* [here](https://youtu.be/2w-2MX5QrQw).
+
+## *sudo*
+
+### Step 1: Installing *sudo*
+Switch to *root* and its environment via `su -`.
+```
+$ su -
+Password:
+#
+```
+Install *sudo* via `apt install sudo`.
+```
+# apt install sudo
+```
+Verify whether *sudo* was successfully installed via `dpkg -l | grep sudo`.
+```
+# dpkg -l | grep sudo
+```
+
+### Step 2: Adding User to *sudo* Group
+Add user to *sudo* group via `adduser <username> sudo`.
+```
+# adduser <username> sudo
+```
+>Alternatively, add user to *sudo* group via `usermod -aG sudo <username>`.
+>```
+># usermod -aG sudo <username>
+>```
+Verify whether user was successfully added to *sudo* group via `getent group sudo`.
+```
+$ getent group sudo
+```
+`reboot` for changes to take effect, then log in and verify *sudopowers* via `sudo -v`.
+```
+# reboot
+<--->
+Debian GNU/Linux 10 <hostname> tty1
