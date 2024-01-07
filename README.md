@@ -220,3 +220,39 @@ with:
 ```
 To disable SSH login as *root* irregardless of authentication mechanism, replace below line
 ```
+32 #PermitRootLogin prohibit-password
+```
+with:
+```
+32 PermitRootLogin no
+```
+Check SSH status via `sudo service ssh status`.
+```
+$ sudo service ssh status
+```
+>Alternatively, check SSH status via `systemctl status ssh`.
+>```
+>$ systemctl status ssh
+>```
+
+### Step 2: Installing & Configuring UFW
+Install *ufw* via `sudo apt install ufw`.
+```
+$ sudo apt install ufw
+```
+Verify whether *ufw* was successfully installed via `dpkg -l | grep ufw`.
+```
+$ dpkg -l | grep ufw
+```
+Enable Firewall via `sudo ufw enable`.
+```
+$ sudo ufw enable
+```
+Allow incoming connections using Port 4242 via `sudo ufw allow 4242`.
+```
+$ sudo ufw allow 4242
+```
+Check UFW status via `sudo ufw status`.
+```
+$ sudo ufw status
+```
