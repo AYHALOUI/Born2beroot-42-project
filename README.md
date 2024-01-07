@@ -181,3 +181,42 @@ $ sudo mkdir /var/log/sudo
 Defaults        logfile="/var/log/sudo/<filename>"
 <~~~>
 ```
+To archive all *sudo* inputs & outputs to `/var/log/sudo/`:
+```
+Defaults        log_input,log_output
+Defaults        iolog_dir="/var/log/sudo"
+```
+To require *TTY*:
+```
+Defaults        requiretty
+```
+To set *sudo* paths to `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin`:
+```
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+```
+
+## SSH
+
+### Step 1: Installing & Configuring SSH
+Install *openssh-server* via `sudo apt install openssh-server`.
+```
+$ sudo apt install openssh-server
+```
+Verify whether *openssh-server* was successfully installed via `dpkg -l | grep ssh`.
+```
+$ dpkg -l | grep ssh
+```
+Configure SSH via `sudo vi /etc/ssh/sshd_config`.
+```
+$ sudo vi /etc/ssh/sshd_config
+```
+To set up SSH using Port 4242, replace below line:
+```
+13 #Port 22
+```
+with:
+```
+13 Port 4242
+```
+To disable SSH login as *root* irregardless of authentication mechanism, replace below line
+```
