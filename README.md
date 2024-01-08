@@ -256,10 +256,6 @@ Check UFW status via `sudo ufw status`.
 ```
 $ sudo ufw status
 ```
-```
-$ sudo ufw status
-```
-
 ### Step 3: Connecting to Server via SSH
 SSH into your virtual machine using Port 4242 via `ssh <username>@<ip-address> -p 4242`.
 ```
