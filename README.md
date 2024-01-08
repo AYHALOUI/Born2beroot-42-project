@@ -256,3 +256,42 @@ Check UFW status via `sudo ufw status`.
 ```
 $ sudo ufw status
 ```
+```
+$ sudo ufw status
+```
+
+### Step 3: Connecting to Server via SSH
+SSH into your virtual machine using Port 4242 via `ssh <username>@<ip-address> -p 4242`.
+```
+$ ssh <username>@<ip-address> -p 4242
+```
+Terminate SSH session at any time via `logout`.
+```
+$ logout
+```
+>Alternatively, terminate SSH session via `exit`.
+>```
+>$ exit
+>```
+
+## User Management
+
+### Step 1: Setting Up a Strong Password Policy
+
+#### Password Age
+Configure password age policy via `sudo vi /etc/login.defs`.
+```
+$ sudo vi /etc/login.defs
+```
+To set password to expire every 30 days, replace below line
+```
+160 PASS_MAX_DAYS   99999
+```
+with:
+```
+160 PASS_MAX_DAYS   30
+```
+To set minimum number of days between password changes to 2 days, replace below line
+```
+161 PASS_MIN_DAYS   0
+```
