@@ -327,3 +327,33 @@ To set minimum number of days between password changes to 2 days, replace below 
 ```
 161 PASS_MIN_DAYS   0
 ```
+To send user a warning message 7 days *(defaults to 7 anyway)* before password expiry, keep below line as is.
+```
+162 PASS_WARN_AGE   7
+```
+
+#### Password Strength
+Secondly, to set up policies in relation to password strength, install the *libpam-pwquality* package.
+```
+$ sudo apt install libpam-pwquality
+```
+Verify whether *libpam-pwquality* was successfully installed via `dpkg -l | grep libpam-pwquality`.
+```
+$ dpkg -l | grep libpam-pwquality
+```
+Configure password strength policy via `sudo vi /etc/pam.d/common-password`, specifically the below line:
+```
+$ sudo vi /etc/pam.d/common-password
+<~~~>
+25 password        requisite                       pam_pwquality.so retry=3
+<~~~>
+```
+To set password minimum length to 10 characters, add below option to the above line.
+```
+minlen=10
+```
+To require password to contain at least an uppercase character and a numeric character:
+```
+ucredit=-1 dcredit=-1
+```
+To set a maximum of 3 consecutive identical characters:
