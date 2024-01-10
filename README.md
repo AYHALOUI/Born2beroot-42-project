@@ -357,7 +357,7 @@ To require password to contain at least an uppercase character and a numeric cha
 ucredit=-1 dcredit=-1
 ```
 To set a maximum of 3 consecutive identical characters:
-
+```
 maxrepeat=3
 ```
 To reject the password if it contains `<username>` in some form:
