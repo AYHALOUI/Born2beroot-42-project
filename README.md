@@ -357,3 +357,22 @@ To require password to contain at least an uppercase character and a numeric cha
 ucredit=-1 dcredit=-1
 ```
 To set a maximum of 3 consecutive identical characters:
+
+maxrepeat=3
+```
+To reject the password if it contains `<username>` in some form:
+```
+reject_username
+```
+To set the number of changes required in the new password from the old password to 7:
+```
+difok=7
+```
+To implement the same policy on *root*:
+```
+enforce_for_root
+```
+Finally, it should look like the below:
+```
+password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
