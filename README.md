@@ -396,3 +396,21 @@ Minimum number of days between password change		: <PASS_MIN_DAYS>
 Maximum number of days between password change		: <PASS_MAX_DAYS>
 Number of days of warning before password expires	: <PASS_WARN_AGE>
 ```
+
+### Step 3: Creating a New Group
+Create new *user42* group via `sudo addgroup user42`.
+```
+$ sudo addgroup user42
+```
+Add user to *user42* group via `sudo adduser <username> user42`.
+```
+$ sudo adduser <username> user42
+```
+>Alternatively, add user to *user42* group via `sudo usermod -aG user42 <username>`.
+>```
+>$ sudo usermod -aG user42 <username>
+>```
+Verify whether user was successfully added to *user42* group via `getent group user42`.
+```
+$ getent group user42
+```
