@@ -414,3 +414,22 @@ Verify whether user was successfully added to *user42* group via `getent group u
 ```
 $ getent group user42
 ```
+## *cron*
+
+### Setting Up a *cron* Job
+Configure *cron* as *root* via `sudo crontab -u root -e`.
+```
+$ sudo crontab -u root -e
+```
+To schedule a shell script to run every 10 minutes, replace below line
+```
+23 # m h  dom mon dow   command
+```
+with:
+```
+23 */10 * * * * sh /path/to/script
+```
+Check *root*'s scheduled *cron* jobs via `sudo crontab -u root -l`.
+```
+$ sudo crontab -u root -l
+```
