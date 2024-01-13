@@ -452,3 +452,23 @@ Your script must always be able to display the following information:<br/>
 • The number of commands executed with the sudo program.
 
  You can find the script `monitoring.sh` in this repository.
+## Bonus
+
+### #1: Installation
+Watch *bonus* installation walkthrough *(no audio)* [here](https://youtu.be/2w-2MX5QrQw).
+
+### #2: Linux Lighttpd MariaDB PHP *(LLMP)* Stack
+
+#### Step 1: Installing Lighttpd
+Install *lighttpd* via `sudo apt install lighttpd`.
+```
+$ sudo apt install lighttpd
+```
+Verify whether *lighttpd* was successfully installed via `dpkg -l | grep lighttpd`.
+```
+$ dpkg -l | grep lighttpd
+```
+Allow incoming connections using Port 80 via `sudo ufw allow 80`.
+```
+$ sudo ufw allow 80
+```
