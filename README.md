@@ -472,3 +472,24 @@ Allow incoming connections using Port 80 via `sudo ufw allow 80`.
 ```
 $ sudo ufw allow 80
 ```
+#### Step 2: Installing & Configuring MariaDB
+Install *mariadb-server* via `sudo apt install mariadb-server`.
+```
+$ sudo apt install mariadb-server
+```
+Verify whether *mariadb-server* was successfully installed via `dpkg -l | grep mariadb-server`.
+```
+$ dpkg -l | grep mariadb-server
+```
+Start interactive script to remove insecure default settings via `sudo mysql_secure_installation`.
+```
+$ sudo mysql_secure_installation
+Enter current password for root (enter for none): #Just press Enter (do not confuse database root with system root)
+Set root password? [Y/n] n
+Remove anonymous users? [Y/n] Y
+Disallow root login remotely? [Y/n] Y
+Remove test database and access to it? [Y/n] Y
+Reload privilege tables now? [Y/n] Y
+```
+Log in to the MariaDB console via `sudo mariadb`.
+```
