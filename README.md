@@ -504,3 +504,7 @@ Create new database user and grant them full privileges on the newly-created dat
 ```
 MariaDB [(none)]> GRANT ALL ON <database-name>.* TO '<username-2>'@'localhost' IDENTIFIED BY '<password-2>' WITH GRANT OPTION;
 ```
+Flush the privileges via `FLUSH PRIVILEGES;`.
+```
+MariaDB [(none)]> FLUSH PRIVILEGES;
+```
