@@ -493,3 +493,10 @@ Reload privilege tables now? [Y/n] Y
 ```
 Log in to the MariaDB console via `sudo mariadb`.
 ```
+$ sudo mariadb
+MariaDB [(none)]>
+```
+Create new database via `CREATE DATABASE <database-name>;`.
+```
+MariaDB [(none)]> CREATE DATABASE <database-name>;
+```
