@@ -514,3 +514,7 @@ MariaDB [(none)]> exit
 ```
 Verify whether database user was successfully created by logging in to the MariaDB console via `mariadb -u <username-2> -p`.
 ```
+$ mariadb -u <username-2> -p
+Enter password: <password-2>
+MariaDB [(none)]>
+```
