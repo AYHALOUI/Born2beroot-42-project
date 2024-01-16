@@ -508,3 +508,9 @@ Flush the privileges via `FLUSH PRIVILEGES;`.
 ```
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
+Exit the MariaDB shell via `exit`.
+```
+MariaDB [(none)]> exit
+```
+Verify whether database user was successfully created by logging in to the MariaDB console via `mariadb -u <username-2> -p`.
+```
