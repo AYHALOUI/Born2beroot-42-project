@@ -518,3 +518,5 @@ $ mariadb -u <username-2> -p
 Enter password: <password-2>
 MariaDB [(none)]>
 ```
+Confirm whether database user has access to the database via `SHOW DATABASES;`.
+```
