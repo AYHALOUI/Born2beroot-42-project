@@ -528,4 +528,8 @@ MariaDB [(none)]> SHOW DATABASES;
 | information_schema |
 +--------------------+
 ```
+Exit the MariaDB shell via `exit`.
+```
+MariaDB [(none)]> exit
+```
 
