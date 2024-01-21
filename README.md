@@ -535,4 +535,9 @@ MariaDB [(none)]> exit
 #### Step 3: Installing PHP
 Install *php-cgi* & *php-mysql* via `sudo apt install php-cgi php-mysql`.
 ```
-
+$ sudo apt install php-cgi php-mysql
+```
+Verify whether *php-cgi* & *php-mysql* was successfully installed via `dpkg -l | grep php`.
+```
+$ dpkg -l | grep php
+```
