@@ -541,3 +541,4 @@ Verify whether *php-cgi* & *php-mysql* was successfully installed via `dpkg -l |
 ```
 $ dpkg -l | grep php
 ```
+
