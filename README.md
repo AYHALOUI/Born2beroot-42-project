@@ -548,3 +548,4 @@ $ sudo apt install wget
 ```
 Download WordPress to `/var/www/html` via `sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html`.
 ```
+
