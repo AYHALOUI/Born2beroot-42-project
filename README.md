@@ -541,3 +541,10 @@ Verify whether *php-cgi* & *php-mysql* was successfully installed via `dpkg -l |
 ```
 $ dpkg -l | grep php
 ```
+#### Step 4: Downloading & Configuring WordPress
+Install *wget* via `sudo apt install wget`.
+```
+$ sudo apt install wget
+```
+Download WordPress to `/var/www/html` via `sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html`.
+```
