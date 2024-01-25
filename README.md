@@ -550,4 +550,5 @@ Download WordPress to `/var/www/html` via `sudo wget http://wordpress.org/latest
 ```
 $ sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html
 ```
-
+Extract downloaded content via `sudo tar -xzvf /var/www/html/latest.tar.gz`.
+```
