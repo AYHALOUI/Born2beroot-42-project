@@ -560,4 +560,7 @@ $ sudo rm /var/www/html/latest.tar.gz
 ```
 $ sudo tar -xzvf /var/www/html/latest.tar.gz
 ```
-
+$ sudo rm /var/www/html/latest.tar.gz
+```
+$ sudo tar -xzvf /var/www/html/latest.tar.gz
+```
