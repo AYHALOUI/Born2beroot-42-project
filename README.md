@@ -564,4 +564,8 @@ Remove tarball via `sudo rm /var/www/html/latest.tar.gz`.
 ```
 $ sudo rm /var/www/html/latest.tar.gz
 ```
+Copy content of `/var/www/html/wordpress` to `/var/www/html` via `sudo cp -r /var/www/html/wordpress/* /var/www/html`.
+```
+$ sudo cp -r /var/www/html/wordpress/* /var/www/html
+```
 
